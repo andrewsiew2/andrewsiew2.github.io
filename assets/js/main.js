@@ -67,25 +67,13 @@
 
 		function toggleExtraEducation(){
 			divDisplay = document.getElementById("extra_education").style.display;
-			if (divDisplay === "none") {
-				document.getElementById("extra_education").style.display = "inline";
-				document.getElementById("extra_education_button").value = "Show less";
-			}else{
-				document.getElementById("extra_education").style.display = "none";
-				document.getElementById("extra_education_button").value = "Show More"
-			}
+			$('#extra_education').slideToggle();
 
 		}
 
 		function toggleExtraWork(){
 			divDisplay = document.getElementById("extra_work").style.display;
-			if (divDisplay === "none") {
-				document.getElementById("extra_work").style.display = "inline";
-				document.getElementById("extra_work_button").value = "Show less";
-			}else{
-				document.getElementById("extra_work").style.display = "none";
-				document.getElementById("extra_work_button").value = "Show More"
-			}
+			$('#extra_work').slideToggle();
 
 		}
 
