@@ -6,21 +6,50 @@
 -->
 <html>
 	<head>
+
 		<title>Andrew Siew</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/fakeLoader.js"></script>
+		<script src="assets/js/main.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
 		
+		
 		<link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="./assets/css/style.css" rel="stylesheet" />
+		
+  		<link rel="stylesheet" href="assets/css/fakeLoader.css">
+  		
+  		<script>
+		   $(document).ready(function () {
+                $.fakeLoader({
+                    bgColor: '#34495e',
+                    spinner:"spinner4"
+                });
+            });
+		</script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
 	</head>
+
 	<body class="landing" style="background-color: #EEEEEE">
 
+		<!-- Fake load out -->
+		<div class="fakeLoader"></div>
+
+		<!-- Scroll up button -->
+		<a class="top-link show" href="#header" id="js-top">
+		 	<img style="height: 100%; width: 100%;" src="images/scroll_up.png">
+		</a>
+		
 		<!-- Header -->
+
 			<header id="header" class="alt">
 				<h1><a href="index.html">Andrew Siew</a></h1>
 				<a href="#nav">More Info</a>
@@ -32,13 +61,13 @@
 					<li><a href="#experiences">Experiences</a></li>
 					<li><a href="#abilities">Abilities</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Leadership</a></li>
-					<li><a href="#contact">Extra-curicular Activities</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#leadership">Leadership</a></li>
+					<li><a href="#achievements">Achievements</a></li>
+					<li><a href="#travel">Travel</a></li>
 					<hr />
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Hobbies</a></li>
-					<li><a href="elements.html">Travel</a></li>
+					<li><a href="generic.html">Blog</a></li>
+					<li><a href="elements.html">More Travel</a></li>
 					
 				</ul>
 				<div class="navbar-header">
@@ -58,8 +87,8 @@
 				<p>Full Stack Engineer</p>
 			</section>
 
-
 		<!-- Education -->
+		
 		<div id="experiences" class="container"  style="background-color: #EEEEEE">
 			<h2>Experiences</h2>
 
@@ -71,7 +100,7 @@
 						<h4>University of Washington</h4>
 						<p class="experience-period">
 							Sept 2016				- 
-							Mar 2020			</p>
+							June 2020			</p>
 						<img src="./images/cs.jpg" style="height: 200px; width: 250px">
 					</div>
 					<div class="col-md-8">
@@ -86,6 +115,7 @@
 									<img src="./images/pin.jpg" style="height: 15px; width: 15px">
 									Seattle, Washington, United States					</span>
 							</span>
+							
 						</p>
 					</div>
 				</div>
@@ -613,6 +643,13 @@
 									</span>
 								</li>
 								<li>
+									<span class="ability-title">JQuery</span>
+									<span class="ability-score">
+										<img src="./images/star.jpg"  height="15px" width="15px" />
+										<img src="./images/star.jpg"  height="15px" width="15px" />
+									</span>
+								</li>
+								<li>
 									<span class="ability-title">Android Development</span>
 									<span class="ability-score">
 										<img src="./images/star.jpg"  height="15px" width="15px" />
@@ -699,7 +736,7 @@
 									World Heath Organisation(WHO) is currently contributing funds for this project.
 								</li>
 								<li>
-									Working on making the application compatible with <a href="https://github.com/opendatakit" target="_blank">ODK</a> and adding new features.
+									Working on making the application compatible with <a href="https://github.com/opendatakit" target="_blank">ODK</a> and improving the back end.
 								</li>
 							</ul>
 							<h4>Technology</h4>
@@ -712,17 +749,26 @@
 								<li>
 									<a href="downloads/Cold_Chain_Mapper_Paper.pdf" target="_blank" class="button alt" download>More Details</a>
 								</li>
+								<li>
+									<button class="button alt" download>More Details</button>
+								</li>
 							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
 						</div>
 					</article>
+					
 					<!-- ODK -->
-					<article class="feature right">
+					<article class="feature left">
 						<span class="image"><img src="images/odk.PNG" alt="" style="width: 600px; height: 390px" /></span>
 						<div class="content">
 							<h3>Open Data Kit (Open Source)
 								<br /><a href="https://impactplusplus.github.io/website/" target="_blank">Impact++</a>
 								<br /><p style="font-size: 14px; font-style: italic;">September 2019 - Current</p>
 							</h3>
+							<a id="demo01" href="#animatedModal">DEMO01</a>
 							<ul>
 								<li>
 									ODK is a data managing and collection tool generally used by resource constrained environments.
@@ -743,6 +789,10 @@
 									<a href="https://github.com/opendatakit" target="_blank" class="button alt">Repository</a>
 								</li>
 							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
 						</div>
 					</article>
 
@@ -772,11 +822,15 @@
 									<a href="https://fs-flashreport-generator.herokuapp.com/" target="_blank" class="button alt">Application</a>
 								</li> -->
 							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
 						</div>
 					</article>
 
 					<!-- FARESTART -->
-					<article class="feature right">
+					<article class="feature left">
 						<span class="image"><img src="images/farestart.PNG" alt="" style="width: 450px; height: 300px; padding-left: 20px" /></span>
 						<div class="content">
 							<h3>FareStart 
@@ -805,6 +859,10 @@
 									<!-- <a href="https://fs-flashreport-generator.herokuapp.com/" target="_blank" class="button alt">Application</a> -->
 								</li>
 							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
 						</div>
 					</article>
 
@@ -812,25 +870,197 @@
 
 				</div>
 			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper special" style="background-color: #FFFFFF">
+			<!-- Leadership -->
+			<section id="leadership_section" class="wrapper style1" style="background-color: #FFFFFF">
 				<div class="inner">
-					<header class="major narrow">
-						<h2>Leadership</h2>
+					<header class="major narrow" id="leadership">
+						<h2 style="font-size: 54px; font-weight: 300; color: #22A39F">Leadership</h2>
+						<hr>
 					</header>
-					
-					<ul class="actions">
-						<li><a href="#" class="button big alt">Tempus Aliquam</a></li>
-					</ul>
+					<article class="feature right">
+						<span class="image"><img src="images/impact2.PNG" alt="" style=" padding-left: 20px" /></span>
+						<div class="content">
+							<h3>Community Committee 
+								<br /><a href="https://impactplusplus.github.io/website/" target="_blank">Impact++</a>
+								<br /><p style="font-size: 14px; font-style: italic;">October 2019 - Current</p>
+							</h3>
+							<ul>
+								<li>
+									Outreach to gain sponsorships for the club.
+								</li>
+								<li>
+									Improve the presence of the club in the campus.
+								</li>
+							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
+						</div>
+					</article>
+					<article class="feature right">
+						<span class="image"><img src="images/spike2.PNG" alt="" style=" padding-left: 20px" /></span>
+						<div class="content">
+							<h3> Head Event Organiser partnered with <br /><a href="https://www.stjude.org" target="_blank">St. Jude's Children Hospital</a>
+								
+								<br /><p style="font-size: 14px; font-style: italic;">January 2017 - December 2017</p>
+							</h3>
+							<ul>
+								<li>
+									St. Jude is a research hospital that helps cure cancer in children. All the research they make is made public.
+								</li>
+								<li>
+									Raised $2,300 and donated it to St. Jude.
+								</li>
+								<li>
+									Hosted a volleyBall tournament, a 3 day volleyball marathon, dunk tank event and others to raise money.  
+								</li>
+								<li>
+									Got Monster, Chipotle and Earls(popular local bar) to sponsor.
+								</li>
+								<li>
+									Publicised the event on King5 and this was the first time St.Jude was on TV. Check it out 
+									<a href="https://www.king5.com/video/news/local/uw-fraternity-holds-volleyball-marathon/281-2560981" target="_blank">here</a>.
+								</li>
+								<li>
+									Check out the facebook page <a href="https://www.facebook.com/atospikeforstjude/?ref=bookmarks" target="_blank">here</a>.
+								</li>
+							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
+						</div>
+					</article>
+					<article class="feature right">
+						<span class="image"><img src="images/ato.PNG" alt="" style=" padding-left: 20px" /></span>
+						<div class="content">
+							<h3>VP of Alpha Tau Omega
+								<br /><p style="font-size: 14px; font-style: italic;">January 2018 - December 2018</p>
+							</h3>
+							<ul>
+								<li>
+									Manage the internal affairs of the fraternity.
+								</li>
+								<li>
+									Keep positions accountable on their duties.
+								</li>
+							</ul>
+							<h3>Recruitment Officer at Alpha Tau Omega
+								<br /><p style="font-size: 14px; font-style: italic;">January 2017 - December 2017</p>
+							</h3>
+							<ul>
+								<li>
+									Recruit potential new members to the fraternity.
+								</li>
+							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
+						</div>
+					</article>
 				</div>
+			</section>
+			<!-- Achievements -->
+			<div id="achievements" class="container" style="padding-bottom: 0px">
+				<h2>Achievements</h2>
+				<hr />
+			</div>
+			<section id="achievement section" class="wrapper style1" style=" padding-top: 0px" >
+				<div class="inner">
+					<article class="feature left">
+						<span class="image" style="text-align: center;"><img src="images/dean.png" alt="" style="display:inline-block; ;width: 320; height:320px"/></span>
+
+						<div class="content">
+							<h3>Annual Dean's List
+								<br /><p style="font-size: 14px; font-style: italic;">2016-2017 and 2018-2019</p>
+							</h3>
+							<ul>
+								<li>
+									Received the Annual Dean's List from 2016-2017 and 2018-2019.
+								</li>
+								<li>
+									To receive an annual dean's list you need to get at least a 3.5 in all quarters of the academic year.
+								</li>
+							</ul>
+							<span class="location" style="color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Seattle, Washington
+							</span>
+						</div>
+					</article>
+					<article class="feature left">
+						<span class="image"><img src="images/wsc.png" alt="" style="width: 450px; height:320px" /></span>
+
+						<div class="content">
+							<h3>World Scholar's Cup at Dubai
+								<br /><p style="font-size: 14px; font-style: italic;">2013</p>
+							</h3>
+							<ul>
+								<li>
+									Ranked 10th in individual debating, junior division.
+								</li>
+								<li>
+									Ranked 18th in team debating, junior division.
+								</li>
+								<li>Praticed with local teams and the Malaysian Institute of Debate and Public Speaking.</li>
+								<li>
+									Qualified and participated in the Tournament of Champions(<a href="https://www.scholarscup.org/toc/">TOC</a>) in New Haven, Connecticut.
+								</li>
+								<li>
+									Participated in last year's competition at Bangkok.
+								</li>
+								<li>
+									The World Scholars (<a href="https://www.scholarscup.org/">WSC</a>) Cup is an international team academic program with
+									students participating from over 50 countries. WSC brings students from
+									dierent cultures together to discuss issues and ideas relevant to today and
+									the future.
+								</li>
+								<span class="location"style=" color: #22A39F">
+									<img src="images/pin.jpg" style="height: 15px; width: 15px">
+									Dubai, UAE
+								</span>
+									<span class="location"style=" color: #22A39F">
+									<img src="images/pin.jpg" style="height: 15px; width: 15px">
+									Bangkok, Thailand
+								</span>
+								<span class="location" style=" color: #22A39F">
+									<img src="images/pin.jpg" style="height: 15px; width: 15px">
+									New Haven, Connecticut
+								</span>
+							</ul>
+						</div>
+					</article>
+					<article class="feature left">
+						<span class="image"><img src="images/toast.png" alt="" style="width: 450px; height:320px"/></span>
+
+						<div class="content">
+							<h3>Club Champion for a Humorous Speech competition in Toastmasters
+								<br /><p style="font-size: 14px; font-style: italic;">2015</p>
+							</h3>
+							<ul>
+								<li>
+									While doing my A-levels I was in the Toastmasters and participated in weekly events. 
+								</li>
+								<li>
+									Winning this allowed me to represent my club at a district level.
+								</li>
+							</ul>
+							<span class="location"style=" color: #22A39F">
+								<img src="images/pin.jpg" style="height: 15px; width: 15px">
+								Sri Hartamas, Kuala Lumpur
+							</span>
+						</div>
+					</article>
+				<div>
 			</section>
 
 
 		<!-- Three -->
-			<section id="three" class="wrapper style3 special">
+			<section id="travel_section" class="wrapper style3 special">
 				<div class="inner">
-					<header class="major narrow	">
+					<header class="major narrow	" id="travel">
 						<h2>Travel</h2>
 					</header>
 					<div class="image-grid">
@@ -860,13 +1090,13 @@
 					</div>
 
 					<ul class="actions">
-						<li><a href="#" class="button big alt">Magna feugiat</a></li>
+						<li><a href="#" class="button big alt">More Travel</a></li>
 					</ul>
 				</div>
 			</section>
 
 		<!-- Four -->
-			<section id="four" class="wrapper style2 special">
+			<!-- <section id="four" class="wrapper style2 special">
 				<div class="inner">
 					<header class="major narrow">
 						<h2>Get in touch</h2>
@@ -892,7 +1122,7 @@
 						</ul>
 					</form>
 				</div>
-			</section>
+			</section> REMOVED DUE TO SECURITY VULNERABILITY-->
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -920,11 +1150,6 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
