@@ -24,6 +24,7 @@
 		<link href="./assets/css/style.css" rel="stylesheet" />
 		
   		<link rel="stylesheet" href="assets/css/fakeLoader.css">
+  		<link rel="icon" href="images/personal/icon.png" type="image/x-icon">
   		
   		<script>
 		   $(document).ready(function () {
@@ -31,6 +32,7 @@
                     bgColor: '#34495e',
                     spinner:"spinner4"
                 });
+
             });
 		</script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -81,7 +83,7 @@
 			<section id="banner">
 				
 				<img src="./images/personal/me2_crop.png" alt="Andrew Siew" width="246" height="246" style="border:5px solid white;border-radius: 50%" />
-				<p>Full Stack Engineer</p>
+				<p>Full Stack Engineer <br />206.954.4796 | andrewsiew2@gmail.com | github.com/andrewsiew2</p>
 			</section>
 
 		<!-- Scroll up button -->
@@ -251,6 +253,53 @@
 			<hr />
 			<h3>Work Experience</h3>
 			<div class="experiences">
+				<div class="experience row">
+					<div class="col-md-4" >
+						<h4>ICTD Lab @ UW</h4>
+						<p class="experience-period">
+							September 2019				- 
+							Current			</p>
+						<img src="./images/ictd.png" style="display: inline-block; width: 200px">
+					</div>
+					<div class="col-md-8">
+						<strong>Research Assistant</strong>
+							<span class="hidden-phone">
+								<ul>
+									<li>
+										Maintain the <a target="_blank" href="#cold_chain_project">Cold Chain</a> application I helped build in Spring.
+									</li>
+									<li>
+										Developing a way to convert the new data format created by the lab into an ODK application format.
+									</li>
+									<li>Add new features to the application such as new functionality and visualisation for vaccination data.
+									</li>
+									<li>
+										Currently supervised by <a target="_blank" href="https://www.cs.washington.edu/people/faculty/anderson">Ricard Anderson</a>.
+									</li>
+
+
+
+									
+								</ul>
+
+							</span>
+							<span class="experience-details">
+								<span class="location">
+									<img src="images/pin.jpg" style="height: 15px; width: 15px">
+									Seattle, Washington	
+								</span>
+									
+								
+													
+								<span class="seperator">|</span>
+								<span class="link">
+									<a href="https://ictd.cs.washington.edu/" target="_blank">ITCD website</a>
+								</span>
+													
+							</span>
+						</p>
+					</div>
+				</div>	
 		
 				<div class="experience row">
 					<div class="col-md-4">
@@ -321,10 +370,10 @@
 										Impact++ is a coding club at the University of Washington that helps non profits by coding software for them for free while giving club members the experience of out of school coding.
 									</li>
 									<li>
-										Currently involved in building features for ODK.
+										Currently involved in building features for <a href="#odk_project">ODK</a>.
 									</li>
 									<li>
-										Improved the front end features of the data analysis platform usedby Farestart.
+										Improved the front end features of the data analysis platform usedby <a href="#farestart_project">Farestart</a>.
 									</li>
 								</ul>
 
@@ -340,10 +389,6 @@
 								<span class="seperator">|</span>
 								<span class="link">
 									<a href="https://impactplusplus.github.io/website/" target="_blank">Impact++ website</a>
-								</span>
-								<span class="seperator">|</span>
-								<span class="link">
-									<a href="downloads/naveego_recommendation.pdf" target="_blank" download>Recommendation</a>
 								</span>
 													
 							</span>
@@ -712,7 +757,7 @@
 			<section id="one" class="wrapper style1" style=" padding-top: 0px" >
 				<div class="inner">
 					<!-- COLD CHAIN -->
-					<article class="feature left">
+					<article id="cold_chain_project" class="feature left">
 						<span class="image"><img src="images/cold_chain.jpg" alt="" /></span>
 
 						<div class="content">
@@ -750,9 +795,6 @@
 								<li>
 									<a href="downloads/Cold_Chain_Mapper_Paper.pdf" target="_blank" class="button alt" download>More Details</a>
 								</li>
-								<li>
-									<button class="button alt" download>More Details</button>
-								</li>
 							</ul>
 							<span class="location" style="color: #22A39F">
 								<img src="images/pin.jpg" style="height: 15px; width: 15px">
@@ -762,14 +804,13 @@
 					</article>
 					
 					<!-- ODK -->
-					<article class="feature left">
+					<article class="feature left" id="odk_project">
 						<span class="image"><img src="images/odk.PNG" alt="" style="width: 600px; height: 390px" /></span>
 						<div class="content">
 							<h3>Open Data Kit (Open Source)
 								<br /><a href="https://impactplusplus.github.io/website/" target="_blank">Impact++</a>
 								<br /><p style="font-size: 14px; font-style: italic;">September 2019 - Current</p>
 							</h3>
-							<a id="demo01" href="#animatedModal">DEMO01</a>
 							<ul>
 								<li>
 									ODK is a data managing and collection tool generally used by resource constrained environments.
@@ -831,7 +872,7 @@
 					</article>
 
 					<!-- FARESTART -->
-					<article class="feature left">
+					<article class="feature left" id="farestart_project">
 						<span class="image"><img src="images/farestart.PNG" alt="" style="width: 450px; height: 300px; padding-left: 20px" /></span>
 						<div class="content">
 							<h3>FareStart 
@@ -927,7 +968,7 @@
 									Check out the facebook page <a href="https://www.facebook.com/atospikeforstjude/?ref=bookmarks" target="_blank">here</a>.
 								</li>
 							</ul>
-							
+
 							<span class="location" style="color: #22A39F">
 								<img src="images/pin.jpg" style="height: 15px; width: 15px">
 								Seattle, Washington
@@ -1014,10 +1055,8 @@
 									Participated in last year's competition at Bangkok.
 								</li>
 								<li>
-									The World Scholars (<a href="https://www.scholarscup.org/">WSC</a>) Cup is an international team academic program with
-									students participating from over 50 countries. WSC brings students from
-									dierent cultures together to discuss issues and ideas relevant to today and
-									the future.
+									The World Scholars (<a href="https://www.scholarscup.org/">WSC</a>) Cup is an international team academic tournament with
+									students participating from over 50 countries.
 								</li>
 								<span class="location"style=" color: #22A39F">
 									<img src="images/pin.jpg" style="height: 15px; width: 15px">
@@ -1073,7 +1112,7 @@
 						    </div>
 						    
 						</a>
-						<a href="" target="_blank" class="imageWrapper">
+						<a href="travel/london.html" class="imageWrapper">
 						    <img src="images/travel/london/home.png" alt="" />
 						    <div class="cornerLink">
 						    	<h3>London 2019</h3>
@@ -1084,6 +1123,13 @@
 						    <img src="images/travel/san_fran/home.jpg" alt="" />
 						    <div class="cornerLink">
 						    	<h3>San Francisco 2019</h3>
+						    </div>
+						    
+						</a>
+						<a href="" target="_blank" class="imageWrapper">
+						    <img src="images/travel/thailand_2018/home.png" alt="" />
+						    <div class="cornerLink">
+						    	<h3>Thailand 2018</h3>
 						    </div>
 						    
 						</a>
